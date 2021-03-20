@@ -1,0 +1,61 @@
+.container {
+  background-color: #f5f7fa;
+  padding: 1.5em;
+  font-size: 1.0em;
+  font-family: 'Montserrat, sans-serif';
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    padding:7px;
+    border: 1px solid grey;
+}
+
+.header button {
+    padding: 7px;
+    margin-left: 5px;
+    width: 100px;
+    border: 1px solid gray;
+    background-color: #f5f7fa;
+}
+
+.sub-container {
+    flex-direction: row;
+    display: flex;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.sub-container .name {
+    width: 200px;
+    padding: 20px;
+    margin-right: 5em;
+}
+
+.sub-container .field {
+    width: 200px;
+    padding: 20px;
+}
+
+.sub-container .button {
+   padding: 20px;
+   margin-top: 19px;
+}
+
+.field svg {
+    color: #0085ff;
+    position: absolute;
+    margin: 9px 0 0 160px;
+}
+
+.button button {
+    padding: 7px;
+    width: 200px;
+    background-color: #0085ff;
+    color: white;
+    border: 1px solid grey;
+}
+

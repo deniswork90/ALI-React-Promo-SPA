@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const port = process.env.PORT || 3000;
 
 module.exports = {
-  mode: 'development',  
+  mode: 'development',
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.[hash].js'
@@ -14,6 +14,7 @@ module.exports = {
     extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
   },
   devtool: 'inline-source-map',
+  
   module: {
     rules: [
       {
@@ -24,19 +25,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              localsConvention: 'camelCase',
-              sourceMap: true
-            }
-          }
-        ]
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
